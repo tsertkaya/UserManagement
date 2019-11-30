@@ -19,7 +19,12 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
-    "rxjs": "~6.4.0",
+    "@ng-bootstrap/ng-bootstrap": "^5.1.4",
+    "@ngrx/store": "^8.5.2",
+    "bootstrap": "^4.4.1",
+    "font-awesome": "^4.7.0",
+    "rxjs": "^6.4.0",
+    "rxjs-observable": "0.0.7",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },

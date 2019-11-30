@@ -1,0 +1,25 @@
+<div class="card h-100" style="width: 100%;">
+    <div class="card-body">
+
+        <h5 class="card-title">Albums</h5>
+        <div class="row">
+            <div class="col-sm-12">
+                <select class="custom-select float-right" (change)="changeAlbum($event)">
+                    <option selected> Choose Album</option>
+                    <option *ngFor="let album of albums" [value]="album.id">{{album.title}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mt-2 photo-list">
+
+            <div class="col-sm-2 p-1" style="width:100%" *ngFor="let photo of
+                photos">
+                <img src="https://via.placeholder.com/150/8e973b" class="card-img-top" alt="image-1" style="width:100%">
+                <div class="card-img-overlay">
+                    <p class="card-title">Card title</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

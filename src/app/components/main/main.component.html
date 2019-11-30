@@ -1,0 +1,31 @@
+<div class="row mt-5">
+    <div class="offset-4 col-sm-6">
+        <h3>PROFİLE</h3>
+    </div>
+    <div class="col-sm-2">
+        <!-- <app-user-list></app-user-list> -->
+
+        <select class="custom-select float-right" [(ngModel)]="currentUserID" (change)="changeUser(currentUserID)">
+            <option selected> Choose User</option>
+            <option *ngFor="let user of users" [value]="user.id">{{user.name}}</option>
+        </select>
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-sm-4" style="height:20em;">
+
+        <app-user-detail></app-user-detail>
+    </div>
+    <div class="col-sm-8" style="height:20em;">
+        <app-user-album></app-user-album>
+    </div>
+</div>
+<div class="row mt-5 mb-5">
+    <div class="col-sm-4" style="height:20em;">
+        <app-user-post></app-user-post>
+    </div>
+    <div class="col-sm-8" style="height:20em;">
+        <app-user-todo></app-user-todo>
+    </div>
+</div>

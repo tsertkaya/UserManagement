@@ -1,0 +1,31 @@
+<div class="card h-100" style="width:100%;">
+
+    <div class="card-body">
+        <h5 class="card-title">User Details</h5>
+        <div *ngIf="user!=undefined">
+            <div class="row form-group">
+                <label class="col-sm-4">Username:</label>
+                <div class="col-sm-8">
+                    <label>{{user.name}}</label>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-sm-4">Email:</label>
+                <div class="col-sm-8">
+                    <label>{{user.email}}</label>
+                </div>
+            </div>
+            <div class="row form-group">
+                <label class="col-sm-4">Adress:</label>
+                <div class="col-sm-8">
+
+                    <label>{{user.address.street}}
+                        {{user.address.suite }}
+                        {{user.address.city
+                        }}</label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
