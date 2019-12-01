@@ -67,8 +67,8 @@ export class UserTodoComponent {
     this.todoService.update(todo).subscribe(result => { console.log("result-update", result); });
   }
 
-  todoDelete(todo) {
-    this.todoService.delete(todo.id).subscribe(result => { console.log("result-delete", result); })
+  todoDelete(todo, index) {
+    this.todoService.delete(todo.id).subscribe(result => { console.log("result-delete", result); this.todos.splice(index,1) })
   }
 
   private getDismissReason(reason: any): string {
